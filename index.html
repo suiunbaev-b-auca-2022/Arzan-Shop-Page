@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Website</title>
     <style>
+        
+
         body {
-            font-family: Arial, sans-serif;
+            font-family:Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: hsl(198, 19%, 90%);
@@ -43,6 +45,24 @@
             background-color: #be55b9;
             color: #fff;
         }
+
+
+        .toggle {
+            border: 1px solid grey;
+            margin: 20px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: lightgray;
+        
+        }
+        .panel {
+            display: none;
+        }
+        #about {
+            font-size: medium;
+            font-weight: 700;
+            font-style:italic;
+        }
     </style>
 </head>
 <body>
@@ -58,9 +78,20 @@
         </ul>
     </nav>
     <main>
-        <h2 id="about">About Us</h2>
-        <p>A private website development company.</p>
-        <img src="https://web.tanais.ru/local/templates/webtns/img/razrab.png" alt="Sample Image">
+        <div class="toggle" id="about" onclick="toggle()">About Us</div>
+        <div class="panel" id="panel">A private website development company.
+            <p> </p>
+            <img src="https://web.tanais.ru/local/templates/webtns/img/razrab.png" alt="Sample Image">
+        </div>
+        <script>
+            function toggle() {
+                if (document.getElementById("panel").style.display == "block")    {
+                    document.getElementById("panel").style.display = "none"
+                } else {
+                    document.getElementById("panel").style.display = "block"
+                }
+            }
+        </script>
         <h2 id="services">Services</h2>
         <ul>
             <li>Web Design</li>
