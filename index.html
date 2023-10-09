@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Website</title>
     <style>
-        
-
         body {
             font-family:Arial, sans-serif;
             margin: 0;
@@ -15,12 +13,15 @@
         }
 
         header {
-            background-color: hsl(173, 53%, 79%);
-            color: #530c0cb8;
-            text-align: center;
-            padding: 20px;
+            background-color: hsl(190, 14%, 57%);
+            color: #942020b8;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.02px;
         }
-
+    
         nav {
             text-align: center;
         }
@@ -32,7 +33,9 @@
 
         nav li {
             display: inline;
-            margin-right: 20px;
+            color: #c232bb;
+            margin-right: 80px;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         main {
@@ -42,7 +45,7 @@
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #be55b9;
+            background-color: #548a96;
             color: #fff;
         }
 
@@ -70,21 +73,87 @@
         div, .toggle {
             background-color: aqua;
         }
+        header li {
+            color:#c5eb0a;
+        }
+        .logo {
+        width: 25px; /* Set the desired width */
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+        margin: 5px; /* Add margin for positioning */
+        border: 2px solid #007bff; /* Add a border with a blue color (#007bff) */
+        border-radius: 10px; /* Apply rounded corners */
+        box-shadow: 3px 3px 5px #888888; /* Add a shadow effect */
+        }
+        .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;      
+    }
+    
+    .img-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      max-width: 700px;
+      background-color: rgb(225, 231, 234);
+    }
+
+    .hero h1 {
+      font-size: 80px;
+    }
+
+    .hero div {
+      font-size: 30px;
+      background-color: hsl(198, 19%, 90%);
+    }
+
+    button {
+      font-size: 40px;
+      padding: 10px 40px;
+      border-radius: 15px;
+      border: none;
+      background-color:black;
+      color: white;
+      /* border: 2px solid #75a4ba; */
+      box-shadow: 3px 3px 5px #888888;
+    }
     </style>
 </head>
 <body>
     <header>
-        <h1 id="home">Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <img src="https://media.licdn.com/dms/image/C4D0BAQEe7Oqy-M7jBQ/company-logo_200_200/0/1638280750854?e=2147483647&v=beta&t=rgqHo1h-U3sMtsFXuRW74FDYbfLkPOikbcKBnM5GkHc" alt="Company Logo" class="logo">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
+    <!-- <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contacts">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
     <main>
+        <!-- style="background-image: url('https://www.setuppost.com/wp-content/uploads/2022/04/Dublin-Website-Designing.jpeg'); background-size: cover; background-repeat: no-repeat;" -->
+        <section class="hero">
+            <div class="img-header">
+              <h1>Creative Website Studio</h1>
+              <div>The Best Studio that Makes For You Well-Designed and Search Engine Optimized Website.
+                Order Right Now and Get a Ready-Made Website in a Day!
+              </div>
+              <p> </p>
+              <button>Order</button>
+            </div>
+        </section>
         <div class="toggle" id="about" onclick="toggle()">About Us</div>
         <div class="panel" id="panel">A private website development company.
             <p> </p>
