@@ -17,25 +17,22 @@
             color: #942020b8;
             display:flex;
             flex-direction: column;
-            align-items: center;
+            align-items:end;
             justify-content: center;
             padding: 0.02px;
         }
-    
-        nav {
-            text-align: center;
-        }
-
+        
         nav ul {
             list-style-type: none;
-            padding: 0;
+            padding: 0;  
         }
 
         nav li {
             display: inline;
             color: #c232bb;
-            margin-right: 80px;
+            margin-right: 70px;
             font-family: 'Courier New', Courier, monospace;
+    
         }
 
         main {
@@ -70,26 +67,25 @@
             font-size: large;
             background-color:antiquewhite;
         }
-        div, .toggle {
-            background-color: aqua;
-        }
         header li {
             color:#c5eb0a;
+            align-items: flex-end;
         }
         .logo {
-        width: 25px; /* Set the desired width */
-        height: auto; /* Automatically adjust height to maintain aspect ratio */
-        margin: 5px; /* Add margin for positioning */
-        border: 2px solid #007bff; /* Add a border with a blue color (#007bff) */
-        border-radius: 10px; /* Apply rounded corners */
-        box-shadow: 3px 3px 5px #888888; /* Add a shadow effect */
+        width: 25px; 
+        height: auto;
+        margin: 5px; 
+        border: 2px solid #007bff; 
+        border-radius: 10px; 
+        box-shadow: 3px 3px 5px #888888; 
         }
         .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;      
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;    
+        background-image: url('https://facts.net/wp-content/uploads/2023/05/man-snowboarding.jpeg');  
+        }
     
     .img-header {
       display: flex;
@@ -98,16 +94,16 @@
       align-items: center;
       height: 100vh;
       max-width: 700px;
-      background-color: rgb(225, 231, 234);
     }
 
     .hero h1 {
       font-size: 80px;
+      color:#4947a8;
     }
 
     .hero div {
       font-size: 30px;
-      background-color: hsl(198, 19%, 90%);
+      color:blueviolet
     }
 
     button {
@@ -117,16 +113,16 @@
       border: none;
       background-color:black;
       color: white;
-      /* border: 2px solid #75a4ba; */
       box-shadow: 3px 3px 5px #888888;
     }
     </style>
 </head>
 <body>
     <header>
+        <!-- <div class="logo"><img src="https://media.licdn.com/dms/image/C4D0BAQEe7Oqy-M7jBQ/company-logo_200_200/0/1638280750854?e=2147483647&v=beta&t=rgqHo1h-U3sMtsFXuRW74FDYbfLkPOikbcKBnM5GkHc" alt="Company Logo" class="logo">
+        </div> -->
         <nav>
             <ul>
-                <img src="https://media.licdn.com/dms/image/C4D0BAQEe7Oqy-M7jBQ/company-logo_200_200/0/1638280750854?e=2147483647&v=beta&t=rgqHo1h-U3sMtsFXuRW74FDYbfLkPOikbcKBnM5GkHc" alt="Company Logo" class="logo">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -134,16 +130,7 @@
             </ul>
         </nav>
     </header>
-    <!-- <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contacts">Contact</a></li>
-        </ul>
-    </nav> -->
     <main>
-        <!-- style="background-image: url('https://www.setuppost.com/wp-content/uploads/2022/04/Dublin-Website-Designing.jpeg'); background-size: cover; background-repeat: no-repeat;" -->
         <section class="hero">
             <div class="img-header">
               <h1>Creative Website Studio</h1>
