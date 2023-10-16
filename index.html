@@ -1,179 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Simple Website</title>
     <style>
-        body {
-            font-family:Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: hsl(198, 19%, 90%);
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: hsl(198, 19%, 90%);
+      }
 
-        header {
-            background-color: hsl(190, 14%, 57%);
-            color: #942020b8;
-            display:flex;
-            flex-direction: column;
-            align-items:end;
-            justify-content: center;
-            padding: 0.02px;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;  
-        }
-
-        nav li {
-            display: inline;
-            color: #c232bb;
-            margin-right: 70px;
-            font-family: 'Courier New', Courier, monospace;
-    
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #548a96;
-            color: #fff;
-        }
-
-
-        .toggle {
-            border: 1px solid grey;
-            margin: 20px;
-            padding: 10px;
-            cursor: pointer;
-            background-color: lightgray;
-        
-        }
-        .panel {
-            display: none;
-        }
-        #about {
-            font-size: medium;
-            font-weight: 700;
-            font-style:italic;
-        }
-        div.panel {
-            font-size: large;
-            background-color:antiquewhite;
-        }
-        header li {
-            color:#c5eb0a;
-            align-items: flex-end;
-        }
-        .logo {
-        width: 25px; 
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: auto;
+        background-color: hsl(190, 14%, 57%);
+        color: #942020b8;
+      }
+      .logo-image {
+        width: 30px;
         height: auto;
-        margin: 5px; 
-        border: 2px solid #007bff; 
-        border-radius: 10px; 
-        box-shadow: 3px 3px 5px #888888; 
-        }
-        .hero {
+        margin: 10px;
+
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #888888;
+      }
+      .menu-items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .menu li {
+        margin-right: 20px;
+      }
+      main {
+        padding: 20px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #548a96;
+        color: #fff;
+      }
+
+      .toggle {
+        border: 1px solid grey;
+        margin: 20px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: lightgray;
+      }
+      .panel {
+        display: none;
+      }
+      #about {
+        font-size: medium;
+        font-weight: 700;
+        font-style: italic;
+      }
+      div.panel {
+        font-size: large;
+        background-color: antiquewhite;
+      }
+
+      .hero {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;    
-        background-image: url('https://facts.net/wp-content/uploads/2023/05/man-snowboarding.jpeg');  
-        }
-    
-    .img-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      max-width: 700px;
-    }
+        height: 100vh;
+        background-image: url("https://facts.net/wp-content/uploads/2023/05/man-snowboarding.jpeg");
+      }
 
-    .hero h1 {
-      font-size: 80px;
-      color:#4947a8;
-    }
+      .img-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        max-width: 700px;
+      }
 
-    .hero div {
-      font-size: 30px;
-      color:blueviolet
-    }
+      .hero h1 {
+        font-size: 80px;
+        color: #4947a8;
+      }
 
-    button {
-      font-size: 40px;
-      padding: 10px 40px;
-      border-radius: 15px;
-      border: none;
-      background-color:black;
-      color: white;
-      box-shadow: 3px 3px 5px #888888;
-    }
+      .hero div {
+        font-size: 30px;
+        color: blueviolet;
+      }
+
+      button {
+        font-size: 40px;
+        padding: 10px 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: black;
+        color: white;
+        box-shadow: 3px 3px 5px #888888;
+      }
+      .services {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 50px;
+      }
+
+      .services h2 {
+        align-self: center;
+        font-size: 50px;
+        text-align: center;
+      }
+      .services h3 {
+        align-self: center;
+        font-size: 30px;
+      }
+      .service {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        gap: 50px;
+      }
+
+      .reverse {
+        flex-direction: row-reverse;
+        background-color: rgb(223, 223, 223);
+      }
+      .services img {
+        width: 500px;
+        height: 250px;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <!-- <div class="logo"><img src="https://media.licdn.com/dms/image/C4D0BAQEe7Oqy-M7jBQ/company-logo_200_200/0/1638280750854?e=2147483647&v=beta&t=rgqHo1h-U3sMtsFXuRW74FDYbfLkPOikbcKBnM5GkHc" alt="Company Logo" class="logo">
-        </div> -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contacts">Contact</a></li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header class="menu">
+      <a href="#" class="logo">
+        <img
+          src="https://media.licdn.com/dms/image/C4D0BAQEe7Oqy-M7jBQ/company-logo_200_200/0/1638280750854?e=2147483647&v=beta&t=rgqHo1h-U3sMtsFXuRW74FDYbfLkPOikbcKBnM5GkHc"
+          alt="Company Logo"
+          class="logo-image"
+        />
+      </a>
+      <ul class="menu-items">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services1">Services</a></li>
+        <li><a href="#contacts1">Contact</a></li>
+      </ul>
     </header>
     <main>
-        <section class="hero">
-            <div class="img-header">
-              <h1>Creative Website Studio</h1>
-              <div>The Best Studio that Makes For You Well-Designed and Search Engine Optimized Website.
-                Order Right Now and Get a Ready-Made Website in a Day!
-              </div>
-              <p> </p>
-              <button>Order</button>
-            </div>
-        </section>
-        <div class="toggle" id="about" onclick="toggle()">About Us</div>
-        <div class="panel" id="panel">A private website development company.
-            <p> </p>
-            <img src="https://web.tanais.ru/local/templates/webtns/img/razrab.png" alt="Sample Image">
+      <section class="hero">
+        <div class="img-header">
+          <h1>Creative Website Studio</h1>
+          <div>
+            The Best Studio that Makes For You Well-Designed and Search Engine
+            Optimized Website. Order Right Now and Get a Ready-Made Website in a
+            Day!
+          </div>
+          <p></p>
+          <button>Order</button>
         </div>
-        <script>
-            function toggle() {
-                if (document.getElementById("panel").style.display == "block")    {
-                    document.getElementById("panel").style.display = "none"
-                } else {
-                    document.getElementById("panel").style.display = "block"
-                }
-            }
-        </script>
-        <h2 id="services">Services</h2>
-        <ul>
-            <li>Web Design</li>
-            <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.</p>
-            <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*aTYOTFS4Vkr-nwHNML3GvQ.jpeg" alt="Sample Image2">
-            <p> </p>
-            <li>Graphic Design</li>
-            <p>Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
-            <img src="https://www.postalplussuwanee.com/portals/98/StoreFiles/design2.jpg" alt="Sample Image3">
-            <p> </p>
-            <li>SEO</li>
-            <p>Search engine optimization (SEO) is the art and science of getting pages to rank higher in search engines such as Google. Because search is one of the main ways in which people discover content online, ranking higher in search engines can lead to an increase in traffic to a website.</p>
-            <img src="https://www.lemonlight.com/wp-content/uploads/2023/01/AdobeStock_275879381-768x485.jpeg" alt="Sample Image4">
-        </ul>
-        <h2 id="contacts">Contacts</h2>
+      </section>
+      <div class="toggle" id="about" onclick="toggle()">About Us</div>
+      <div class="panel" id="panel">
+        A private website development company.
+        <p></p>
+        <img
+          src="https://web.tanais.ru/local/templates/webtns/img/razrab.png"
+          alt="Sample Image"
+        />
+      </div>
+      <script>
+        function toggle() {
+          if (document.getElementById("panel").style.display == "block") {
+            document.getElementById("panel").style.display = "none";
+          } else {
+            document.getElementById("panel").style.display = "block";
+          }
+        }
+      </script>
+
+      <section class="services">
+        <h2 id="services1">What Services Can We Provide for You?</h2>
+
+        <div class="service">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*aTYOTFS4Vkr-nwHNML3GvQ.jpeg"
+            alt="Sample Image2"
+          />
+          <div>
+            <h3>Web Design</h3>
+
+            Web design refers to the design of websites that are displayed on
+            the internet. It usually refers to the user experience aspects of
+            website development rather than software development. Web design
+            used to be focused on designing websites for desktop browsers;
+            however, since the mid-2010s, design for mobile and tablet browsers
+            has become ever-increasingly important.
+          </div>
+        </div>
+
+        <div class="service reverse">
+          <img
+            src="https://www.postalplussuwanee.com/portals/98/StoreFiles/design2.jpg"
+            alt="Sample Image3"
+          />
+          <div>
+            <h3>Graphic Design</h3>
+            Graphic design is a craft where professionals create visual content
+            to communicate messages. By applying visual hierarchy and page
+            layout techniques, designers use typography and pictures to meet
+            users’ specific needs and focus on the logic of displaying elements
+            in interactive designs, to optimize the user experience.
+          </div>
+        </div>
+
+        <div class="service">
+          <img
+            src="https://www.lemonlight.com/wp-content/uploads/2023/01/AdobeStock_275879381-768x485.jpeg"
+            alt="Sample Image4"
+          />
+          <div>
+            <h3>Search Engine optimization</h3>
+            Search engine optimization (SEO) is the art and science of getting
+            pages to rank higher in search engines such as Google. Because
+            search is one of the main ways in which people discover content
+            online, ranking higher in search engines can lead to an increase in
+            traffic to a website.
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 id="contacts1">Contacts</h2>
         <p>Name: Baitur Suiunbaev</p>
         <p>Organization: BS Company</p>
-        <p>Address: 123 Main Street, Suite 456
-            Cityville, State 78901</p>
+        <p>Address: 123 Main Street, Suite 456 Cityville, State 78901</p>
 
         <p>Phone: +996771234567</p>
         <p>Email: contact@mywebsite.com</p>
@@ -188,12 +258,9 @@
         <p>Email: sales@mywebsite.com</p>
         <p>Phone: +996 (770) 123456</p>
         <p></p>
-
-        <li><a href="#home">Go Up</a></li>
-
+      </section>
+      <li><a href="#home">Go Up</a></li>
     </main>
-    <footer>
-        &copy; 2023 My Website
-    </footer>
-</body>
+    <footer>&copy; 2023 My Website</footer>
+  </body>
 </html>
