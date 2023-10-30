@@ -24,5 +24,5 @@
 
 # What is the call to action (CTA)?
 * Button "**Order**"
-* _Making immediate action_ by ordering website services
+* **_Making immediate action by ordering_** website services
 * _Attract clients_ interested in **web design** and related services. 
