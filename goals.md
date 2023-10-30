@@ -13,7 +13,7 @@
 ### Quickness of Service
 * Get a Ready-Made Website **_in a Two Days_**
 ### Specialist Support
-* _One week_ support from our specialists
+* **_One week_** support from our specialists
 
 # Who is your target audience?
 * **Businesses or individuals** looking for professional website design services
