@@ -12,7 +12,6 @@
         background-color: hsl(198, 19%, 90%);
       }
 
-  
       * {
         box-sizing: border-box;
       }
@@ -50,6 +49,14 @@
         display: block;
         right: 0px;
       }
+      #burger-toggle:checked ~ .burger {
+        display: none;
+        right: 0px;
+      }
+      #burger-toggle:checked ~ .cross {
+        display: block;
+        right: 0px;
+      }
 
       .burger .line {
         width: 30px;
@@ -69,10 +76,21 @@
         z-index: 1;
         margin-right: 5px;
       }
+      .cross {
+        display: none;
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+        margin-right: 15px;
+        color: #d0cdcd;
+      }
 
       @media (max-width: 768px) {
         .burger {
           display: block;
+        }
+        .cross {
+          display: none;
         }
 
         .menu1 {
@@ -239,6 +257,10 @@
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
+      </label>
+
+      <label for="burger-toggle" class="cross">
+        <p>&#10007;</p>
       </label>
 
       <nav class="menu1">
